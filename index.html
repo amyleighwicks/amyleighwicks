@@ -19,7 +19,7 @@
       overflow: hidden;
     }
     body {
-      background: url('landing-background-centered.jpg') no-repeat center center fixed;
+      background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
       display: flex;
       align-items: center;
@@ -47,9 +47,16 @@
       font-size: 1rem;
       line-height: 1.3;
       max-width: 500px;
-      margin-bottom: 2em;
+      margin-bottom: 1em;
       white-space: pre-wrap;
       text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    }
+    .portrait {
+      max-width: 300px;
+      width: 90%;
+      margin-bottom: 2em;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
     }
     a.button {
       padding: 12px 30px;
@@ -79,6 +86,9 @@
         padding: 10px 20px;
         font-size: 0.9rem;
       }
+      .portrait {
+        max-width: 90%;
+      }
     }
   </style>
 </head>
@@ -92,7 +102,8 @@
     I woke 20 years later<br>
     writing these poems.
   </div>
-  <a href="index.html" class="button" onclick="fadeOut(event)">Enter Site</a>
+  <img src="portrait.jpg" alt="Amy Leigh Wicks Portrait" class="portrait" />
+  <a href="main.html" class="button" onclick="fadeOut(event)">Enter Site</a>
 
   <script>
     function fadeOut(event) {
